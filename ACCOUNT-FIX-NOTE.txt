@@ -1,0 +1,12 @@
+ACCOUNT FIX
+
+This build has the Supabase Project URL and Publishable key already filled in.
+It also shows authentication errors directly inside the account dialog instead of only using a toast.
+
+In Supabase:
+1. Authentication -> Providers -> Email: make sure Email is ON.
+2. Turn OFF Confirm email for this username-only version.
+3. Make sure you ran supabase.sql.
+4. Make sure the profiles/media/reactions tables exist and the media/avatars storage buckets exist.
+
+IMPORTANT: the key in config.js is a browser Publishable key. Never replace it with a secret/service_role key.

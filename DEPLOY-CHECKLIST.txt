@@ -1,0 +1,20 @@
+LOVERS GARAGE PUBLIC DEPLOY CHECKLIST
+
+[ ] Create Supabase project
+[ ] Run supabase.sql
+[ ] Create PUBLIC media bucket
+[ ] Create PUBLIC avatars bucket
+[ ] Disable email confirmation for Email Auth
+[ ] Put Supabase URL into config.js
+[ ] Put Supabase anon/publishable key into config.js
+[ ] Test account creation
+[ ] Test login after closing/reopening browser
+[ ] Test upload from Browser A
+[ ] Confirm upload appears in Browser B
+[ ] Test like/dislike from Browser B
+[ ] Confirm counts update in Browser A
+[ ] Test profile + profile picture
+[ ] Test rename/delete only on your own uploads
+[ ] Push website to GitHub
+[ ] Deploy with Cloudflare Pages (or another static host)
+[ ] Test the public URL from a separate device/network

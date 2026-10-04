@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOVERS GARAGE</title>
+<link rel="icon" href="assets/lovers-garage.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="ageGate" class="gate"><div class="gate-box"><img src="assets/lovers-garage.png" class="gate-logo"><div class="gate-rule"></div><p class="warning-title">WARNING</p><p class="warning">I am not responsible for whatever people upload on this app <strong>HOWEVER...</strong> please keep the content on the legal side and only continue if you're <strong>18+</strong>.</p><button id="continueBtn" class="primary big">I AM 18+ — CONTINUE</button></div></div>
+<header class="topbar"><a class="brand" href="#home"><img src="assets/lovers-garage.png" alt="LOVERS GARAGE"></a><label class="search"><span>⌕</span><input id="searchInput" placeholder="Search the garage..." autocomplete="off"><kbd>/</kbd></label><nav><button id="randomBtn" class="nav-btn">↻ Random</button><a href="#home">Home</a><a href="#upload">Upload</a><button id="accountBtn" class="account-btn">Account</button></nav></header>
+<main>
+<section id="homeView" class="view"><div class="hero"><div><p class="eyebrow">PUBLIC MEDIA ARCHIVE</p><h1>WELCOME TO THE GARAGE.</h1><p class="sub">A public place to upload and discover images, GIFs, and videos. Everyone sees the same garage, from any device.</p></div><button id="heroRandom" class="primary">↻ Random media</button></div><div class="toolbar"><div><strong id="resultCount">0</strong><span> public items</span></div><select id="sortSelect"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="name">Name A–Z</option><option value="size">Largest first</option></select></div><div id="emptyState" class="empty"><div class="empty-mark">＋</div><h2>THE GARAGE IS EMPTY.</h2><p>Be the first to put something in it.</p><a class="secondary" href="#upload">Upload something</a></div><div id="mediaGrid" class="grid"></div></section>
+<section id="uploadView" class="view hidden"><div class="upload-head"><p class="eyebrow">PUBLIC UPLOAD</p><h1>PUT IT IN THE GARAGE.</h1><p class="sub">Anything you upload here is publicly visible to other visitors.</p></div><div id="dropzone" class="dropzone"><input id="fileInput" type="file" accept="image/png,image/jpeg,image/gif,image/webp,video/mp4,video/webm,video/quicktime" multiple hidden><div class="drop-icon">↥</div><h2>DROP FILES HERE</h2><p>or</p><button id="chooseBtn" class="primary">Choose files</button><small>Images · GIFs · PNG · JPG · WebP · MP4 · WebM · MOV · 50 MB maximum per file on the free Supabase plan</small></div><div id="uploadQueue" class="queue"></div></section>
+<section id="profileView" class="view hidden"></section>
+</main>
+<div id="accountModal" class="modal hidden"><div class="modal-box"><button class="modal-close" data-close="accountModal">×</button><div id="accountContent"></div></div></div>
+<div id="detailModal" class="modal hidden"><div class="detail-box"><button class="modal-close" data-close="detailModal">×</button><div id="detailContent"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body></html>
